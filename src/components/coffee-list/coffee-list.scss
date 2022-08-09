@@ -1,0 +1,60 @@
+@import "../../variables";
+
+section {
+  font-family: $main-font;
+  margin: 100px auto;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .toggle {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+
+    .search, .filter{
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      input {
+        font-family: $main-font;
+        border: 0 transparent;
+        box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.25);
+        text-align: center;
+        padding: 5px;
+        width: 200px;
+        border-radius: 5px;
+      }
+
+      button {
+        font-family: $main-font;
+        background: #ffffff;
+        box-shadow: 4px 4px 20px rgb(0, 0, 0, 0.25);
+        border: 0 transparent;
+        padding: 5px;
+        width: 75px;
+        cursor: pointer;
+
+        &:hover {
+          background: #e5e5e5;
+        }
+
+        &:active, &.active {
+          background: #c6c6c6;
+        }
+      }
+    }
+
+  }
+
+  ul.coffee-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 50px auto;
+  }
+}

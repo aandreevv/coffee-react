@@ -1,0 +1,23 @@
+@import '../../variables.scss';
+
+li.coffee-item {
+  margin: 30px;
+  justify-content: space-between;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 250px;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+    text-align: right;
+
+    &.price {
+      font-weight: bold;
+    }
+  }
+}
